@@ -11,7 +11,9 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
 app.use(express.static("public"));
+
 
 // Get all tables that aren't waiting
 app.get("/api/tables", function(req, res) {
